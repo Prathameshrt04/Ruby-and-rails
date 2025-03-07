@@ -1,0 +1,10 @@
+<div class="text-center mt-10">
+  <h1 class="text-4xl font-extrabold text-gray-800">Welcome to Smart Connect</h1>
+  <p class="text-lg text-gray-600 mt-2">Easily connect farmers and buyers for seamless crop transactions.</p>
+
+  <% if user_signed_in? %>
+    <%= link_to "Go to Dashboard", dashboard_path, class: "mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700" %>
+  <% else %>
+    <%= link_to "Get Started", new_user_registration_path, class: "mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700" %>
+  <% end %>
+</div>
